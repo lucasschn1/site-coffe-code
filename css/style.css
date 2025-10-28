@@ -8,7 +8,7 @@ header {
 
     background-color: #6F4E37;
     padding: 10px 30px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #d9c096;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -37,7 +37,11 @@ nav a{
 }
 
 nav a:hover {
-    color: #BA9D8A;
-    border-bottom: 2px solid #e0e0e0;
+    color: #3C2A21;
+    border-bottom: 2px solid #d9c096;
 }
 
+body {
+    /*background-color: #1A120B;*/
+    font-family: "Inconsolata", monospace;
+}

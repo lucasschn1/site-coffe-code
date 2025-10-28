@@ -1,0 +1,43 @@
+
+/* -- container principal de header -- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    background-color: #6F4E37;
+    padding: 10px 30px;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+    max-height: 60px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin-left: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+nav a:hover {
+    color: #BA9D8A;
+    border-bottom: 2px solid #e0e0e0;
+}
+

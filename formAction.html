@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dados recebidos</title>
+    </head>
+    <body>
+        <h1>Página de recebimento dos dados do formulário</h1>
+        
+        <div id="resultados">
+            <p>Processando dados...</p>
+        </div>
+
+        <script>
+            const divResultados = document.getElementById('resultados');
+            const queryString = window.location.search;
+            const params = new URLSearchParams(queryString);
+
+            // TODO
+            if (queryString === "") {
+                divResultados.innerHTML = "<h3>Nenhum dado encontrado</h3>";
+            } else {
+                divResultados.innerHTML = "<h3>Dados recebidos via GET</h3>";
+
+                const lista = document.createElement('ul');
+
+                params.forEach((valor, chave) => {
+                    const item = document.createElement('li');
+
+                    item.innerHTML = `<strong>${chave}:</strong> ${valor}`;
+
+                    lista.append(item);
+                });
+
+                divResultados.appendChild(lista);
+            }   
+        </script>
+    </body>
+    </html>

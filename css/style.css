@@ -76,6 +76,7 @@ nav a:hover {
 .hero .esquerda h1{
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #E5E5CB;
 }
 
 .hero .esquerda p{
@@ -202,6 +203,9 @@ nav a:hover {
 }
 
 
+/*[ ] -> Arrumar
+
+*/
 /* -- AREA DO FORMULARIO --*/
 
 .container-contato-principal {

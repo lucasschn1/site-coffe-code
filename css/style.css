@@ -201,3 +201,99 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
+
+/* -- AREA DO FORMULARIO --*/
+
+.container-contato-principal {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar a linha em telas pequenas */
+    gap: 30px; /* Espaço entre as colunas */
+    
+    /* Centralização horizontal do bloco todo na página: */
+    max-width: 1200px;
+    margin: 40px auto; /* "40px" de margem em cima/baixo, "auto" nas laterais */
+}
+
+/* ---- 2. COLUNA DA ESQUERDA (TEXTO) ---- */
+.textoContato {
+    flex: 1; /* Ocupa 1 parte do espaço */
+    min-width: 300px; 
+    padding: 20px;
+    text-align: center;
+    
+    /* Adicionado para centralizar verticalmente a imagem e o texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoContato h4 {
+    font-size: 24px;
+    color: #E5E5CB;
+}
+
+.textoContato img {
+    max-width: 150px;
+    margin-top: 20px;
+    filter: invert(100%);
+}
+
+/* ---- 3. COLUNA DA DIREITA (FORMULÁRIO) ---- */
+.formulario {
+    flex: 1.5; /* Ocupa 1.5x o espaço (pode mudar para 1 se quiser 50/50) */
+    min-width: 320px;
+}
+
+/* ---- 4. ESTILOS DA CAIXA INTERNA ".form-box" (Sem alterações) ---- */
+.form-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* ---- 5. ESTILOS DOS CAMPOS (Sem alterações) ---- */
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

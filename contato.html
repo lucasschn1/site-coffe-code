@@ -8,49 +8,33 @@
     <link rel="shortcut icon" href="img/coffee.png" type="image/x-icon">
 </head>
 <body>
-     <header>
-    
-        <div class="logo">
-            <img src="img/coffee.png" alt="logo do site">
-        </div>
-
-        <h1>Coffee&Code</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicío</a></li>
-                <li><a href="/">Produtos</a></li>
-                <li><a href="About.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    <!-- MENU DE NAVEGAÇÃO-->
+    <div id="menu-principal"></div>
 
     <div class="container-contato-principal">
         <div class="textoContato">
             <h4>Entre em contato com Coffee&Code</h4>
             <img src="img/coffee.png" alt="logo">
         </div>
-<!-- TODO: adicionar validação no formulário -->
-<!-- [ ] -->
+
         <div class="formulario">
             <div class="form-box">
                 <h2>Entre em contato</h2>
                 <form action="formAction.html" method="GET">
                     <div>
                         <label for="nomeUsuario">Seu nome:</label>
-                        <input type="text" name="name" id="nomeUsuario" placeholder="Digite seu nome" required>
+                        <input type="text" name="nome" id="nomeUsuario" placeholder="Digite seu nome" required>
                     </div>
                 
                     <div>
-                        <label for="emailUsuario">Seu e-mail:</label>
-                        <input type="email" name="emailUsuario" placeholder="@email.com" id="emailUsuario" required>
+                        <label for="email_Usuario">Seu e-mail:</label>
+                        <input type="email" name="email" placeholder="@email.com" id="email_Usuario" required>
                     </div>
 
                     <div>
                         <label for="telefoneUsuario">Seu número:</label>
-                        <input type="tel" name="telefoneUsuario" id="telefoneUsuario" placeholder="(xx) xxxxx-xxxx">
+                        <input type="tel" name="telefone" id="telefoneUsuario" placeholder="(xx) xxxxx-xxxx" pattern="^(\+?55)?\s?(\(?\d{2}\)?)\s?(9\d{4})[-.\s]?(\d{4})$"
+                        onkeydown="return formatarTelefone(event)">
                     </div>
 
                     <div>
@@ -69,7 +53,11 @@
             </div>
         </div>
     </div>
+
+     <footer>
+        <p>&copy; 2025 Coffee&Code • Desenvolvido por <a href="#">Lucas Schneider</a></p>
+    </footer>
     
-    
+    <script src="js/scripts.js"></script>
 </body>
 </html>

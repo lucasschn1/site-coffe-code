@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dados recebidos</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
     </head>
     <body>
         <h1>Página de recebimento dos dados do formulário</h1>
@@ -17,7 +22,6 @@
             const queryString = window.location.search;
             const params = new URLSearchParams(queryString);
 
-            // TODO: modificar função
             if (queryString === "") {
                 divResultados.innerHTML = "<h3>Nenhum dado encontrado</h3>";
             } else {
